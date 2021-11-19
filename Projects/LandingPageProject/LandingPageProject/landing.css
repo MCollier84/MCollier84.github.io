@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url(Fournurses.jpg);
+  background-position: stretch;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+.header p {
+  font-size: 60px;
+}
+.header h1 {
+  font-size: 80px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(0, 19, 128);
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#newsletter {
+  background-color: rgb(0, 19, 128);
+  padding: 15px;
+  color: #fff;
+}
+
+#newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#newsletter input {
+  padding: 4px;
+  height: 30px;
+  width: 250px;
+}
+
+.nursebttn:hover {
+  height: 38px;
+  background-color: #7289d4;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  border-radius: 20%;
+}
+
+.qualifications {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: rgb(84, 147, 219);
+  padding: 20px;
+}
+.side h1 {
+  font-size: 40px;
+}
+
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main .med {
+  font-size: 60px;
+  color: rgb(0, 19, 128);
+  margin-top: 0;
+}
+
+.main .babygirl {
+  font-size: 60px;
+  color: rgb(0, 19, 128);
+}
+.main .nurseandman {
+  font-size: 60px;
+  color: rgb(0, 19, 128);
+}
+
+.main a {
+  font-size: 50px;
+}
+
+.stethoscopeheart {
+  background-image: url("NurseandLady.jpg");
+  width: 100%; 
+  height: 300px;
+  padding-left: 20px;
+}
+
+.babygirl {
+  background-image: url("nurse.jpg");
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+.nurseandman {
+  background-image: url("NurseandMan.jpg");
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(0, 19, 128);
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
